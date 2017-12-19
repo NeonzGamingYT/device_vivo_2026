@@ -75,6 +75,13 @@ PRODUCT_PACKAGES += \
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
+
+# PHH-SU
+PRODUCT_PACKAGES += \
+    phh-su \
+    su
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
