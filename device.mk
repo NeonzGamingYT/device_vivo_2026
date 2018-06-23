@@ -31,6 +31,11 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     fastbootd
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0_system \
+    android.hidl.manager@1.0_system
+
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend \
