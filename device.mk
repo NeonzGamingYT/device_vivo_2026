@@ -23,6 +23,10 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.V2026
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
