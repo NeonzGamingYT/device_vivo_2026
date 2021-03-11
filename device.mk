@@ -31,6 +31,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     fastbootd
 
+# GcamGo
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
