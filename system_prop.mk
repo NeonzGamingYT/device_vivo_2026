@@ -37,6 +37,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
     debug.sf.enable_hwc_vds=0
 
+# ZRAM
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=180 \
+    ro.zram.periodic_wb_delay_hours=24
+
 # Zygote
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
