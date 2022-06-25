@@ -74,7 +74,8 @@ PRODUCT_PACKAGES += \
     SystemUIOverlay \
     SettingsOverlay \
     TelephonyOverlay \
-    TetheringConfigOverlay
+    TetheringConfigOverlay \
+    SettingsProviderOverlayHorset
 
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *

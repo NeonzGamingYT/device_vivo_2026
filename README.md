@@ -11,3 +11,8 @@ Codename (_"horset"_) is a combination of horse and goat, got from chinese zodia
 | Memory                  | 3/4/6 GB RAM                                                                                                                   |
 | Storage                 | 32/64/128 GB                                                                                                                      |
 | Battery                 | Li-Po 5000 mAh, non-removable                                                                                           |
+
+## Patch
+1. For Superuser to work: https://github.com/AndyCGYan/lineage_patches_unified/blob/lineage-20-light/patches_treble/system_core/0001-Make-xbin-and-su-executable-by-other.patch
+
+Copyright (C) 2022 Lineage OS
