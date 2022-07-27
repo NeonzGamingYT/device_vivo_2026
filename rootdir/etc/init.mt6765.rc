@@ -35,8 +35,8 @@ on post-fs
     mount none /dev/null vendor/lib64/hw/lights.mt6765.so bind
     mount none /dev/null vendor/etc/init/lights-mtk-default.rc bind
 
-on boot
-    setprop init.svc.console stopped
+on property:init.svc.console=running
+    stop console
 
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
