@@ -94,7 +94,7 @@ PRODUCT_PACKAGES += \
     init.mt6765.rc
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/system/etc/fstab.mt6765
 
 # RcsService
 PRODUCT_PACKAGES += \
