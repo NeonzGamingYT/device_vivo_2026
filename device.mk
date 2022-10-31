@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
     fstab.mt6765 \
     init.mt6765.rc
 
+PRODUCT_PACKAGES += \
+    init.recovery.mt6765.rc \
+    init.recovery.mt6765.sh
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/system/etc/fstab.mt6765
 
