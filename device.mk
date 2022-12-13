@@ -67,6 +67,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend \
