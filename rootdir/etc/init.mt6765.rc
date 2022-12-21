@@ -1,0 +1,43 @@
+on init
+    setprop sys.usb.ffs.aio_compat 1
+
+    # Custom overrides that need to happen right on boot
+    # Override vendor fstab
+    # We only need it to be overridden before things are mounted
+    mount none /system/etc/fstab.mt6765 /vendor/etc/fstab.mt6765 bind
+
+    # Disable vendor overlays
+    mount none /vendor/lost+found /vendor/overlay bind
+
+service charger /system/bin/charger
+    class charger
+    user system
+    group system graphics input
+    capabilities SYS_BOOT
+    seclabel u:r:charger:s0
+
+on charger
+    start charger
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
+
+on post-fs
+    # Unmount the overridden fstab because the SELinux label is incorrect
+    # and some MTK daemons can crash because of that
+    # (and at post-fs, the fstab has already been used to mount the partitions,
+    #  so it is fine to just revert back)
+    umount /vendor/etc/fstab.mt6765
+
+    # Disable OEM Lights 
+    mount none /dev/null vendor/lib/hw/lights.mt6765.so bind
+    mount none /dev/null vendor/bin/hw/android.hardware.lights-service.mediatek bind
+    mount none /dev/null vendor/lib64/hw/lights.mt6765.so bind
+    mount none /dev/null vendor/etc/init/lights-mtk-default.rc bind
+
+on boot
+    setprop init.svc.console stopped
+
+# Disable AOSP RIL if MTK RIL is up
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
