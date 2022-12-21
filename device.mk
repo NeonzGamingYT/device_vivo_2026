@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.V2026
