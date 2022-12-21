@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Inherit the proprietary files
+$(call inherit-product, vendor/vivo/2026/2026-vendor.mk)
+
 # API & VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
