@@ -1,0 +1,13 @@
+# Unpinned blobs from PD2036F_EX_A_6.11.0
+
+# APNs
+etc/apns-conf.xml:product/etc/apns-conf.xml
+
+# Bluetooth-AptX
+lib64/libaptXHD_encoder.so
+lib64/libaptX_encoder.so
+
+# Charger
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib/libshowlogo.so
