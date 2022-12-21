@@ -19,6 +19,10 @@ $(call inherit-product, vendor/vivo/2026/2026-vendor.mk)
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default
+
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
