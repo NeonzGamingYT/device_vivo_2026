@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/vivo/2026
+DEVICE_PATH := device/vivo/horset
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/vivo/2026/2026-vendor.mk)
+$(call inherit-product, vendor/vivo/horset/horset-vendor.mk)
 
 # API & VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.V2026
+    android.hardware.light-service.horset
 
 # Overlays
 PRODUCT_PACKAGES += \

@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/vivo/2026
+DEVICE_PATH := device/vivo/horset
 
 # Architecture
 TARGET_ARCH := arm64

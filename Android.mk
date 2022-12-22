@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),2026)
+ifeq ($(TARGET_DEVICE),horset)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
