@@ -15,6 +15,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/vivo/horset/horset-vendor.mk)
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # API & VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
