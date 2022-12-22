@@ -84,7 +84,7 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
     -->
-    <string name="config_mainBuiltInDisplayCutout">M -32,0 L -32,94 L 32,94 L 32,0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout">M -85,0 L 85, 0 L 22, 46 L -22, 46 Z</string>
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent">Android-Mms/0.1</string>

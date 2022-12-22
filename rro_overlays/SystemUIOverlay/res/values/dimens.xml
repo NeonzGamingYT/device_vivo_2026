@@ -18,15 +18,16 @@
 <resources>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">6dp</dimen>
+    <dimen name="status_bar_padding_top">1px</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">55px</dimen>
+    <dimen name="status_bar_padding_start">12dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">55px</dimen>
+    <dimen name="status_bar_padding_end">8dp</dimen>
 	
-    <!-- Bottom margin size when fingerprint in display is active -->
-     <dimen name="keyguard_indication_margin_bottom">120dp</dimen>
+    <dimen name="rounded_corner_content_padding">30px</dimen>
+
+    <dimen name="status_bar_header_height_keyguard">64px</dimen>
 
 </resources>
