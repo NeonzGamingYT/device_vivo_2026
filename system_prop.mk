@@ -12,6 +12,18 @@ PRODUCT_SYSTEM_PROPERTIES += \
     pm.dexopt.first-boot=quicken \
     pm.dexopt.bg-dexopt=everything
 
+# Dex2oat
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.dex2oat64.enabled=true \
+    dalvik.vm.image-dex2oat-filter=quicken \
+    dalvik.vm.image-dex2oat-threads=8 \
+    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.dex2oat-filter=quicken \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
 # OMX
 PRODUCT_SYSTEM_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
@@ -38,7 +50,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=0
 
 # ZRAM
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.zram.mark_idle_delay_mins=60 \
     ro.zram.first_wb_delay_mins=180 \
     ro.zram.periodic_wb_delay_hours=24
@@ -46,3 +58,33 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Zygote
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Props from FuntouchOS 11
+
+# Audio
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.camera.sound.forced=0 \
+    ro.audio.silent=0
+
+# Wifi and Tethering
+PRODUCT_SYSTEM_PROPERTIES += \
+    wifi.interface=wlan0 \
+    ro.mediatek.wlan.wsc=1 \
+    ro.mediatek.wlan.p2p=1 \
+    mediatek.wlan.ctia=0 \
+    wifi.tethering.interface=ap0 \
+    wifi.direct.interface=p2p0
+
+# USB Charge only function
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.sys.usb.charging.only=yes \
+    ro.sys.usb.bicr=no \
+    ro.sys.usb.storage.type=mtp
+
+# USB MTP WHQL
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+PRODUCT_SYSTEM_PROPERTIES += \
+    sys.ipo.pwrdncap=2
