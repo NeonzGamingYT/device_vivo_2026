@@ -1,7 +1,7 @@
-Device tree for vivo Y12s/Y21 (horset)
+Device tree for vivo Y12s (2026)
 =================================================
 
-Codename (_"horset"_) is a combination of horse and goat, got from chinese zodiac because the device use number for device codename
+Codename (_"2026"_) is a codename for vivo Y12s/Y20 2021
 
 | Basic                   | Spec Sheet                                                                                                                     |
 | -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
