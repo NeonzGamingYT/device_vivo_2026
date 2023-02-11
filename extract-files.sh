@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=horset
+DEVICE=2026
 VENDOR=vivo
 
 # Load extract_utils and do some sanity checks

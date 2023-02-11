@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_horset.mk
+    $(LOCAL_DIR)/lineage_2026.mk
 
 COMMON_LUNCH_CHOICES := \
-	lineage_horset-user \
-	lineage_horset-userdebug \
-	lineage_horset-eng
+	lineage_2026-user \
+	lineage_2026-userdebug \
+	lineage_2026-eng
