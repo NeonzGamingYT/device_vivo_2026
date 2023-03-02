@@ -75,6 +75,24 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.V2026
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    V2026Frameworks \
+    V2026SystemUI \
+    V2026Telephony \
+    SettingsOverlay \
+    SettingsProviderOverlay \
+    TetheringConfigOverlay \
+    WifiOverlay
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+# Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlay \
     SystemUIOverlay \
@@ -86,12 +104,6 @@ PRODUCT_PACKAGES += \
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
-# PHH-SU
-PRODUCT_PACKAGES += \
-    phh-su \
-    su \
-    Superuser
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
@@ -99,6 +111,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
+
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/init.recovery.mt6765.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6765.rc
 
 # RcsService
 PRODUCT_PACKAGES += \
