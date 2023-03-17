@@ -67,11 +67,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0_system
-
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend \
