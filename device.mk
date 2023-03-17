@@ -75,16 +75,10 @@ PRODUCT_PACKAGES += \
     SettingsOverlay \
     TelephonyOverlay \
     TetheringConfigOverlay \
-    SettingsProviderOverlayHorset
+    SettingsProviderOverlayV2026
 
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# PHH-SU
-PRODUCT_PACKAGES += \
-    phh-su \
-    su \
-    Superuser
 
 # Ramdisk
 PRODUCT_PACKAGES += \
