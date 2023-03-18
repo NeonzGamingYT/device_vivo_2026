@@ -125,6 +125,9 @@ BOARD_VIVO_DYNAMIC_PARTITIONS_SIZE := 9122611200
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 
