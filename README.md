@@ -12,7 +12,4 @@ Codename (_"2026"_) is a codename for vivo Y12s/Y20 2021
 | Storage                 | 32/64/128 GB                                                                                                                      |
 | Battery                 | Li-Po 5000 mAh, non-removable                                                                                           |
 
-## Patch
-1. For Superuser to work: https://github.com/AndyCGYan/lineage_patches_unified/blob/lineage-20-light/patches_treble/system_core/0001-Make-xbin-and-su-executable-by-other.patch
-
-Copyright (C) 2022 Lineage OS
+Copyright (C) 2022 ArrowOS
