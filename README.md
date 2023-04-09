@@ -1,15 +1,6 @@
-Device tree for vivo Y12s (2026)
+Device tree for vivo Y12s/Y20 2021
 =================================================
 
-Codename (_"2026"_) is a codename for vivo Y12s/Y20 2021
-
-| Basic                   | Spec Sheet                                                                                                                     |
-| -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
-| CPU                     | Octa-core                                                                                                                      |
-| Chipset                 | MediaTek MT6765 Helio P35 (12 nm)                                                                                                            |
-| GPU                     | PowerVR GE8320                                                                                                                   |
-| Memory                  | 3/4/6 GB RAM                                                                                                                   |
-| Storage                 | 32/64/128 GB                                                                                                                      |
-| Battery                 | Li-Po 5000 mAh, non-removable                                                                                           |
+![vivo 2026](./profile/vivo_spec.png)
 
 Copyright (C) 2022 ArrowOS
