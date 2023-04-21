@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.V2026
+    android.hardware.light@2.0-service.V2026
 
 # Overlays
 PRODUCT_PACKAGES += \
