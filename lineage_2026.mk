@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The ArrowOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,13 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vivo 2026 device
 $(call inherit-product, device/vivo/2026/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := 2026
-PRODUCT_NAME := arrow_2026
+PRODUCT_NAME := lineage_2026
 PRODUCT_BRAND := vivo
 PRODUCT_MODEL := V2026
 PRODUCT_MANUFACTURER := vivo
