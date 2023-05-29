@@ -80,6 +80,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.V2026
 
 # Overlays
+ifneq ($(wildcard vendor/lineage/.),)
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
+endif
+
 PRODUCT_PACKAGES += \
     FrameworkResOverlay \
     SystemUIOverlay \
