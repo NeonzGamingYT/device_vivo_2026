@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
 
 # KPOC
 PRODUCT_PACKAGES += \
+    libshim_showlogo \
     libsuspend \
     android.hardware.health@2.0
 
