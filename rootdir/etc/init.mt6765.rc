@@ -10,9 +10,7 @@ on init
     mount none /vendor/lost+found /vendor/overlay bind
 
 on charger
-    # Turn backlight on and switch to backlight trigger
-    write /sys/class/leds/lcd-backlight/brightness "1000"
-    write /sys/class/leds/lcd-backlight/trigger "backlight"
+    start vendor.light-default
 
 on post-fs
     # Unmount the overridden fstab because the SELinux label is incorrect
