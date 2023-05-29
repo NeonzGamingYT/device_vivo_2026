@@ -9,15 +9,7 @@ on init
     # Disable vendor overlays
     mount none /vendor/lost+found /vendor/overlay bind
 
-service charger /system/bin/charger
-    class charger
-    user system
-    group system graphics input
-    capabilities SYS_BOOT
-    seclabel u:r:charger:s0
-
 on charger
-    start charger
     # Turn backlight on and switch to backlight trigger
     write /sys/class/leds/lcd-backlight/brightness "1000"
     write /sys/class/leds/lcd-backlight/trigger "backlight"
