@@ -15,6 +15,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/vivo/2026/2026-vendor.mk)
 
+# Silence vendor logspam
+include $(DEVICE_PATH)/configs/props/vendor_logtag.mk
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
